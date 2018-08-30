@@ -1,0 +1,421 @@
+
+$theme-color: #f1ad1d;
+
+.paral {
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 100%;
+}
+/* Images for Parallax Sections */ 
+.paralsec {
+	background-image: url("img/bg.jpg");
+	min-height: 700px;
+	position: relative;
+}
+.paralsec1 {
+	background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+} 
+.paralsec2 {
+	background-image: url("img/bg9.jpg");
+}
+.paralsec3 {
+	background-image: url("img/bg5.jpg");
+}
+.paralsec4 {
+	background-image: url("img/bg10.jpg");
+}
+	/* Remove Bottom Margin from Jumbotron */
+.jumbotron {
+	margin-bottom: 0;
+}
+
+/* Components */
+
+.big-title{
+	color:  #fff;
+	font: 700 22px/22px Montserrat, sans-serif;
+	margin: 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.common-title{
+	color:  #333;
+	font: 700 22px/18px Montserrat, sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.big-title span,
+.common-title span{
+	color: $theme-color
+}
+.common-text{
+	color:  #4d4943;
+	font: 400 17px/24px Lato, sans-serif;
+	text-align: center;
+}
+.separ{
+	border-bottom: 3px solid $theme-color;
+	margin: 52px auto;
+	width: 60px;
+}
+.separ_white{
+	border-bottom: 3px solid #fff;
+	margin: 52px auto;
+	width: 281px;
+}
+.btn{
+	background-color: $theme-color;
+	border-color: $theme-color;
+	color:  #fff;
+	font: 400 18px/18px Lato, sans-serif;
+	width: 176px;
+	height: 51px;
+	&:hover{
+		background-color: #333;
+		color: $theme-color;
+		cursor: pointer;
+	}
+}
+.logo-carousel{
+
+}
+
+/* Header */
+.header{
+	&__container{
+		padding-left: 82px;
+		position: absolute;
+		top: 50%;
+	}
+	&__title {
+		color: #fff;
+		font: 700 48px/48px Lato, sans-serif;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	&__subtitle {
+		color: #fff;
+		font: 300 18px/18px Lato, sans-serif;
+		margin-bottom: 28px;
+		text-align: left;
+	}
+}
+.slogan {
+	display: flex;
+	flex-direction: row;
+	&__block {
+		border: 1px solid #fff;
+		background-color: rgba(0, 0, 0, 0.3);
+		color: #fff;
+		font: 700 54px/109px Lato, sans-serif;
+		text-align: center;
+		width: 618px;
+		height: 109px;
+	}
+	&__block_cap {
+		background-color: #fff;
+		color:  $theme-color;
+		width: 138px;
+		height: 109px;
+	}
+}
+
+/* Navbar */
+.navbar {
+	background-color: #fff;
+	opacity: 0.9;
+	text-transform: uppercase;
+	border-bottom: 1px solid $theme-color;
+}
+.container .navbar-brand {
+	color:  $theme-color;
+	font: 400 18px/18px Lato, sans-serif;
+	margin-right: 72px;
+}
+.nav-item .nav-link {
+	font: 400 14px/14px Lato, sans-serif;
+	margin-right: 20px;
+}
+.container .navbar-brand:hover,
+.collapse .nav-item .nav-link:hover {
+	color:  $theme-color;
+}
+
+/* Company Section */
+.company{
+   background-image: url("img/layer.png");
+   padding: 120px 0;
+	&__container{
+		margin-bottom: 184px;
+	}
+	&__award{
+		display: block;
+		margin: 57px auto 171px auto;
+	}
+	&__img{
+		width: 270px;
+		height: 148px;
+		&:hover{
+			cursor: pointer;
+			opacity: 0.5;
+		}
+	}
+	&__img_cons{
+		background-image: url("img/company_1.jpg");
+	}
+	&__img_photo{
+		background-image: url("img/company_2.jpg");
+	}
+	&__img_web{
+		background-image: url("img/company_3.jpg");
+	}
+	&__img_advert{
+		background-image: url("img/company_4.jpg");
+	}
+	&__img-title{
+		background-color: #333;
+		color:  #fff;
+		font: 400 14px/42px Lato, sans-serif;
+		margin: 95px 140px 11px 13px;
+		padding-left: 14px;
+		width: 117px;
+		height: 42px;
+	}
+	&__block{
+		padding-left: 30px;
+	}
+	&__cons{
+		display: block;
+	}
+	&__photo{
+		display: none;
+	}
+	&__web{
+		display: none;
+	}
+	&__advert{
+		display: none;
+	}
+	&__block-title{
+		font: 700 18px/18px Montserrat, sans-serif;
+		color:  #333;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	&__block-title span{
+		color: $theme-color;
+	}
+	&__block-text{
+		color:  #505050;
+		font: 300 14px/22px Lato, sans-serif;
+	}
+}
+/* Team Section */
+.team{
+	background-image: url("img/layer.png");
+	padding: 120px 0;
+	&__block{
+		margin: 0 auto 190px auto;
+	}
+	&__img-item{
+		border: 5px solid #fff;
+		position: relative;
+		width: 175px;
+		height: 180px;
+	}
+	&__img-title{
+		background-color: #333;
+		bottom: 5%;
+		color: #fff;
+		font: 400 14px/42px Lato, sans-serif;
+		left: 5%;
+		position: absolute;
+		text-align: center;
+		width: 136px;
+		height: 42px;
+	}
+	&__img-title span{
+		color: $theme-color;
+	}
+}
+/* Offer-Block */
+.offer{
+	border-bottom: 3px solid #333;
+	width: 271px;
+	&__title{
+		background-color:  #333;
+		color: #fff;
+		font: 700 18px/56px Montserrat, sans-serif;
+		text-align: center;
+	}
+	&__title span{
+		color: $theme-color;
+	}
+	&__text{
+		color:  #505050;
+		font: 300 14px/14px Lato, sans-serif;
+		text-align: center;
+	}
+	&__subtitle{
+		color:  #505050;
+		font: 400 18px/18px Lato, sans-serif;
+		text-align: center;
+	}
+	&__list{
+		list-style: none;
+		padding: 0;
+	}
+}
+/* Portfolio-Section */
+
+.portfolio{
+	background-image: url("img/layer.png");
+	padding: 120px 0;
+}
+.testimonials{
+	&__cap .fa{
+	    background-color: white;
+	    color: $theme-color;
+	    float: left;
+	    font-size: 60px;
+	    padding-right: 10px;
+	}
+	&__line{
+		border-bottom: 3px solid $theme-color;
+		padding: 15px 0;
+	}
+	&__text{
+		border-bottom: 3px solid #111;
+		color:  #5b5b5b;
+		clear: both;
+		font: 300 14px/20px Lato, sans-serif;
+		padding: 19px 0 29px 0;
+	}
+	&__photo{
+		margin: 15px 15px 0 0;
+	}
+	&__info{
+		padding-top: 30px;
+	}
+	&__name{
+		color: #313131;
+		font: 400 14px/14px Lato, sans-serif;
+	}
+	&__function{
+		color:  #5b5b5b;
+		font: 300 14px/14px Lato, sans-serif;
+	}
+}
+/* Blog Section */
+.blog{
+	background-image: url("img/layer.png");
+	padding: 120px 0;
+}
+.post{
+	border-bottom: 3px solid #333;
+	padding-bottom: 11px;
+	margin-bottom: 32px;
+	&__content{
+		width: 370px;
+		height: 181px;
+	}
+	&__icon{
+		background-color: #333;
+		float: left;
+		margin: 9px 9px 0 0;
+		width: 32px;
+		height: 32px;
+	}
+	&__title{
+		color:  #333;
+		font: 700 18px/51px Montserrat, sans-serif;
+		&:hover{
+			color: $theme-color;
+			cursor: pointer;
+		}
+	}
+	&__text{
+		border-bottom: 1px solid #c1c1c1;
+		clear: both;
+		color:  #505050;
+		font: 300 14px/18px Lato, sans-serif;
+		margin-bottom: 16px;
+		padding-bottom: 14px;
+	}
+	&__date,
+	&__more-btn{
+		color:  #828282;
+		font: 300 12px/18px Lato, sans-serif;
+		text-transform: uppercase;
+	}
+	&__date{
+		float: left;
+	}
+	&__more-btn{
+		&:hover{
+			color: $theme-color;
+			cursor: pointer;
+		}
+	}
+}
+/* Contact Section */
+.contact{
+	background-image: url("img/layer.png");
+	padding: 120px 0;
+	&__title{
+		font-size: 18px;
+		text-align: left;
+	}
+	&__name{
+		margin-right: 10px;
+	}
+	&__name,
+	&__email,
+	&__message{
+		background-color:  #fff;
+		border: 1px solid #929292;
+		color:  #505050;
+		font: italic 300 14px/12px Lato, sans-serif;
+		margin-bottom: 10px;
+		padding: 19px 13px;
+		height: 45px;
+	}
+	&__message{
+		height: 186px;
+ 
+	}
+	&__text{
+		font: 300 14px/18px Lato, sans-serif;
+	}
+	&__icon{
+		background-color: #333;
+		float: left;
+		margin: 9px 9px 0 0;
+		width: 32px;
+		height: 32px;
+	}
+	&__btn{
+		float: left;
+		margin: 0 15px 30px 0;
+		width: 118px;
+		height: 43px;
+	}
+}
+.form-control{
+	height: 51px;
+}
+/* Footer */
+.footer{
+	background-color: #303030;
+	&__text{
+		color:  #fff;
+		font: 300 14px/18px Lato, sans-serif;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__icon{
+
+	}
+}

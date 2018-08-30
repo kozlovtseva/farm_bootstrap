@@ -6,47 +6,573 @@
 
 	<title>bootstrap4</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Montserrat:300,300i,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<!-- First Parallax Section -->
-<div class="jumbotron paral paralsec">
-<h1 class="display-3">Here is a heading 1</h1>
-<p class="lead">Here is a short description 1</p>
-<p class="lead">
-<a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a>
-</p>
-</div>
- 
-<!-- Second Parallax Section -->
-<div class="jumbotron paral paralsec1">
-<h1 class="display-3">Here is a heading 2</h1>
-<p class="lead">Here is a short description 2</p>
-<p class="lead">
-<a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button">Here is a button 2</a>
-</p>
-</div>
- 
-<!-- Third Parallax Section -->
-<div class="jumbotron paral paralsec2">
-<h1 class="display-3">Here is a heading 3</h1>
-<p class="lead">Here is a short description 2</p>
-<p class="lead">
-<a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
-</p>
-</div>
- 
-<!-- Add More Parallax Sections Here -->
-<!-- Footer Section -->
-<footer class="wn-footer">
-<p>This is a Bootstrap 4 parallax page with jumbotron created by <a href="https://www.webnots.com/">WebNots Web Consulting Services</a></p>
-<p>
-<a href="#">Back to top</a>
-</p>
-</footer>
+		<!-- First Parallax Section -->
+	<header class="header jumbotron jumbotron-fluid paral paralsec">
+		<div class="container header__container">
+			<h1 class="header__title">Farm Bootstrap</h1>
+			<h4 class="header__subtitle">Awersome professional design</h4>
+			<div class="slogan media">
+				<div class="slogan__block slogan__block_cap col-2 media-body">WE</div>
+				<div class="slogan__block col-10 media-body">MAKE INSPIRATION</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<!-- Navbar -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		  <div class="container">
+		    <a class="navbar-brand" href="#">Bootstrap</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			        	Hello
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Full Parallax Slider</a>
+			          <a class="dropdown-item" href="#">Full Video Background</a>
+			          <a class="dropdown-item" href="#">Full Solid Background</a>
+			          <a class="dropdown-item" href="#">Full Pattern Background</a>
+			        </div>
+			    </li>
+			      
+			    <li class="nav-item">
+			        <a class="nav-link" href="#">Team</a>
+			    </li>
+
+			    <li class="nav-item">
+			        <a class="nav-link" href="#">Services</a>
+			    </li>
+
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			        	Portfolio
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Portfolio Item 1</a>
+			          <a class="dropdown-item" href="#">Portfolio Item 2</a>
+			          <a class="dropdown-item" href="#">Portfolio Item 3</a>
+			        </div>
+			    </li>
+
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			        	Blog
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Blog 2 Cols</a>
+			          <a class="dropdown-item" href="#">Blog 3 Cols</a>
+			          <a class="dropdown-item" href="#">Blog 2 Cols + Sidebar</a>
+			          <a class="dropdown-item" href="#">Blog Regular Layout</a>
+			          <a class="dropdown-item" href="#">Blog Single</a>
+			        </div>
+			    </li>
+
+			    <li class="nav-item">
+			        <a class="nav-link" href="#">Contact</a>
+			    </li>
+
+		  		</ul>
+		  	</div>
+		</nav>
+		<section class="company">
+			<div class="container company__container">
+				<h4 class="common-title">What they said about us</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<img src="img/award.png" alt="award" class="company__award">
+
+				<h4 class="common-title">What else they said about us</h4>
+				<p class="common-text">We will keep to be an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+				<div class="row">
+					<div class="company__img-block d-flex justify-content-between align-content-around flex-wrap col-6">
+						<div class="company__img company__img_cons">
+							<div class="company__img-title">Consulting</div>
+						</div>
+						<div class="company__img company__img_photo">
+							<div class="company__img-title">Photography</div>
+						</div>
+						<div class="company__img company__img_web">
+							<div class="company__img-title">Web Design</div>
+						</div>
+						<div class="company__img company__img_advert">
+							<div class="company__img-title">Advertising</div>
+						</div>			
+					</div>
+					<div class="col-6">
+						<div class="company__block company__cons">
+							<h5 class="company__block-title">Business <span>consulting</span></h5>
+							<p class="company__block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<br><br>
+							Sed ut perspiciatis unde Sorcimenia omnis iste natus irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat cotessa primastera nulla error sit voluptatem accusantium doloremque laudantium.</p>
+
+							<button type="button" class="btn">Check Our Projects</button>
+													
+						</div>
+						<div class="company__block company__photo">
+							<h5 class="company__block-title">Events <span>photography</span></h5>
+							<p class="company__block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<br><br>
+							Sed ut perspiciatis unde Sorcimenia omnis iste natus irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat cotessa primastera nulla error sit voluptatem accusantium doloremque laudantium.</p>
+
+							<button type="button" class="btn">Check Our Projects</button>
+						</div>
+						<div class="company__block company__web">
+							<h5 class="company__block-title">Web <span>design</span></h5>
+							<p class="company__block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<br><br>
+							Sed ut perspiciatis unde Sorcimenia omnis iste natus irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat cotessa primastera nulla error sit voluptatem accusantium doloremque laudantium.</p>
+
+							<button type="button" class="btn">Check Our Projects</button>
+						</div>
+						<div class="company__block company__advert">
+							<h5 class="company__block-title">Social <span>advertising</span></h5>
+							<p class="company__block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<br><br>
+							Sed ut perspiciatis unde Sorcimenia omnis iste natus irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat cotessa primastera nulla error sit voluptatem accusantium doloremque laudantium.</p>
+
+							<button type="button" class="btn">Check Our Projects</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Second Parallax Section -->
+		<section class="jumbotron jumbotron-fluid paral paralsec1">
+			<div class="container">
+				<h3 class="big-title">We change <span>ideas </span>to <span>realities</span></h3>
+				<div class="separ"></div>
+			</div>
+		</section>
+
+		<section class="team">
+			<div class="container team__container">
+				<h4 class="common-title">The secret of a company is the team</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<div class="team__block col-10 d-flex justify-content-between flex-wrap">
+					<div class="team__img-item">
+						<img src="img/team_1.jpg" alt="Cline">
+						<div class="team__img-title">Diana <span>Cline</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_2.jpg" alt="Shirley">
+						<div class="team__img-title">Gladys  <span>Shirley</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_3.jpg" alt="Coley">
+						<div class="team__img-title">Kenneth  <span>Coley</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_4.jpg" alt="Macaulay">
+						<div class="team__img-title">Craig  <span>Macaulay</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_5.jpg" alt="Cline">
+						<div class="team__img-title">Robert  <span>Guido</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_6.jpg" alt="Guido">
+						<div class="team__img-title">Catherin  <span>Pilcher</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_9.jpg" alt="Fisher">
+						<div class="team__img-title">Mark  <span>Fisher</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_10.jpg" alt="Fike">
+						<div class="team__img-title">Thomas  <span>Fike</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_11.jpg" alt="Ross">
+						<div class="team__img-title">Joshua  <span>Ross</span></div>
+					</div>
+					<div class="team__img-item">
+						<img src="img/team_12.jpg" alt="Williams">
+						<div class="team__img-title">Angel  <span>Williams</span></div>
+					</div>
+				</div>
+
+				<h4 class="common-title">You get our gold secret now</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<div class="offers-block d-flex flex-row flex-wrap">
+					<div class="offer">
+						<div class="offer__title">Web <span>Design</span></div>
+						<div class="offer__icon">
+							
+						</div>
+						<div class="offer__text">
+							Developing websites has always been our passion and main goal since we started the company. Putent laoreet et ius utroque dissentias ut.
+						</div>
+						<div class="separ"></div>
+						<div class="offer__subtitle">What we offer you</div>
+						<ul class="offer__list">
+							<li class="offer__item offer__text">Business Card Design</li>
+							<li class="offer__item offer__text">Infographic Design</li>
+							<li class="offer__item offer__text">Website Design</li>
+							<li class="offer__item offer__text">Logo Design</li>
+						</ul>
+					</div>
+					<div class="offer">
+						<div class="offer__title">SEO &  <span>Marketing</span></div>
+						<div class="offer__icon">
+							
+						</div>
+						<div class="offer__text">
+							Marketing, SEO and website analytics are one of our hidden expertise. Putent laoreet itroque camecasta dissentias sipartchallo
+						</div>
+						<div class="separ"></div>
+						<div class="offer__subtitle">What we offer you</div>
+						<ul class="offer__list">
+							<li class="offer__item offer__text">Business Card Design</li>
+							<li class="offer__item offer__text">Infographic Design</li>
+							<li class="offer__item offer__text">Website Design</li>
+							<li class="offer__item offer__text">Logo Design</li>
+						</ul>
+					</div>
+					<div class="offer">
+						<div class="offer__title">Game <span>Design</span></div>
+						<div class="offer__icon">
+							
+						</div>
+						<div class="offer__text">
+							Making great games with perfect elements is our passion and main goal since we started the company. Putent laoreet et ius utroque.
+						</div>
+						<div class="separ"></div>
+						<div class="offer__subtitle">What we offer you</div>
+						<ul class="offer__list">
+							<li class="offer__item offer__text">Business Card Design</li>
+							<li class="offer__item offer__text">Infographic Design</li>
+							<li class="offer__item offer__text">Website Design</li>
+							<li class="offer__item offer__text">Logo Design</li>
+						</ul>
+					</div>
+					<div class="offer">
+						<div class="offer__title">Server  <span>Scripting</span></div>
+						<div class="offer__icon">
+							
+						</div>
+						<div class="offer__text">
+							We're not only good at designing digital goodies, we've also lots of experience in servers. Putent laoreet et ius utroque dissentias ut.
+						</div>
+						<div class="separ"></div>
+						<div class="offer__subtitle">What we offer you</div>
+						<ul class="offer__list">
+							<li class="offer__item offer__text">Business Card Design</li>
+							<li class="offer__item offer__text">Infographic Design</li>
+							<li class="offer__item offer__text">Website Design</li>
+							<li class="offer__item offer__text">Logo Design</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		 
+		<!-- Third Parallax Section -->
+		<section class="featured jumbotron jumbotron-fluid paral paralsec2">
+			<div class="container">
+				<h3 class="big-title">We are <span>featured </span>on</h3>
+				<div class="separ"></div>
+			</div>
+			<div class="featured__logo-block mx-auto d-flex flex-row flex-wrap justify-content-around">
+				<div class="featured__logo">
+					<img src="img/featured_1.png" alt="logo">
+				</div>
+				<div class="featured__logo">
+					<img src="img/featured_2.png" alt="logo">
+				</div>
+				<div class="featured__logo">
+					<img src="img/featured_3.png" alt="logo">
+				</div>
+				<div class="featured__logo">
+					<img src="img/featured_4.png" alt="logo">
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio">
+			<div class="container portfolio__container">
+				<h4 class="common-title">They trust us because we made great work</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<div class="portfolio__block">
+					<!-- смотри лекцию по bootstrap на GB -->
+
+
+
+				</div>
+
+				<h4 class="common-title">Big brands work with good companies</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<div class="logo-carousel">
+					
+				</div>
+
+				<h4 class="common-title">Listen to what they said, you know the truth</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<div class="testimonials d-flex flex-row justify-content-between">
+					<div class="testimonials__item col-4">
+						<div class="testimonials__cap">
+							<i class="fa fa-quote-left text_color"></i>
+							<div class="testimonials__line"></div>
+						</div>
+						<div class="testimonials__text">
+							The best one page html template I have ever seen. I used it for many prjects and many clients recommended every time this template. You purshase it for $14 but you win more this price.
+						</div>
+						<div class="testimonials__author d-flex">
+							<img src="img/testimonial_1.jpg" alt="author" class="testimonials__photo">
+							<div class="testimonials__info">
+								<div class="testimonials__name">Thomas Cuadra</div>
+								<div class="testimonials__function">Founder, PICN</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonials__item col-4">
+						<div class="testimonials__cap">
+							<i class="fa fa-quote-left text_color"></i>
+							<div class="testimonials__line"></div>
+						</div>
+						<div class="testimonials__text">
+							The best one page html template I have ever seen. I used it for many prjects and many clients recommended every time this template. You purshase it for $14 but you win more this price.
+						</div>
+						<div class="testimonials__author d-flex">
+							<img src="img/testimonial_2.jpg" alt="author" class="testimonials__photo">
+							<div class="testimonials__info">
+								<div class="testimonials__name">James Keys</div>
+								<div class="testimonials__function">UI/UX Designer</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonials__item col-4">
+						<div class="testimonials__cap">
+							<i class="fa fa-quote-left text_color"></i>
+							<div class="testimonials__line"></div>
+						</div>
+						<div class="testimonials__text">
+							The best one page html template I have ever seen. I used it for many prjects and many clients recommended every time this template. You purshase it for $14 but you win more this price.
+						</div>
+						<div class="testimonials__author d-flex">
+							<img src="img/testimonial_3.jpg" alt="author" class="testimonials__photo">
+							<div class="testimonials__info">
+								<div class="testimonials__name">Kristal Hennessey</div>
+								<div class="testimonials__function">Founder, Bear Software</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fourth Parallax Section -->
+		<section class="featured jumbotron jumbotron-fluid paral paralsec3">
+			<div class="container">
+				<h3 class="big-title">Check what <span>said</span> our  <span>bird</span></h3>
+				<div class="separ"></div>
+				<div class="separ_white"></div>
+			</div>
+		</section>
+		<!-- Blog Section -->
+		<section class="blog">
+			<div class="container blog__container">
+				<h4 class="common-title">Some times we share some goods</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<div class="posts d-flex justify-content-between flex-wrap">
+					<div class="post col-6 col-md-4">
+						<div class="post__content img-thumbnail">
+							
+						</div>
+						<div class="post__icon">
+							
+						</div>
+						<div class="post__title">Masonry Blog Page Style 1</div>
+						<div class="post__text">
+							You can make many types of posts for your blog porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci quianon numquam.
+						</div>
+						<div class="post__date">June 07, 2018</div>
+						<div class="post__more-btn text-right">Read More</div>
+					</div>
+					<div class="post col-6 col-md-4">
+						<div class="post__content img-thumbnail">
+							
+						</div>
+						<div class="post__icon">
+							
+						</div>
+						<div class="post__title">Nice Photo Window Popup</div>
+						<div class="post__text">
+							You can make many types of posts for your blog porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci quianon numquam.
+						</div>
+						<div class="post__date">June 07, 2018</div>
+						<div class="post__more-btn text-right">Read More</div>
+					</div>
+					<div class="post col-6 col-md-4">
+						<div class="post__content img-thumbnail">
+							
+						</div>
+						<div class="post__icon">
+							
+						</div>
+						<div class="post__title">Video Window On Popup</div>
+						<div class="post__text">
+							You can make many types of posts for your blog porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci quianon numquam.
+							dolorem ipsum quia dolor sit amet consectetur adipisci quiaanon numquam many types of posts.
+						</div>
+						<div class="post__date">June 07, 2018</div>
+						<div class="post__more-btn text-right">Read More</div>
+					</div>
+					<div class="post col-6 col-md-4">
+						<div class="post__content img-thumbnail">
+							
+						</div>
+						<div class="post__icon">
+							
+						</div>
+						<div class="post__title">Post with Slider images</div>
+						<div class="post__text">
+							You can make many types of posts for your blog porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci quianon numquam.
+						</div>
+						<div class="post__date">June 07, 2018</div>
+						<div class="post__more-btn text-right">Read More</div>
+					</div>
+					<div class="post col-6 col-md-4">
+						<div class="post__content img-thumbnail">
+							
+						</div>
+						<div class="post__icon">
+							
+						</div>
+						<div class="post__title">Audio mp3 Post</div>
+						<div class="post__text">
+							You can make many types of posts for your blog porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci quianon numquam.
+						</div>
+						<div class="post__date">June 07, 2018</div>
+						<div class="post__more-btn text-right">Read More</div>
+					</div>
+					<div class="post col-6 col-md-4">
+						<div class="post__content img-thumbnail">
+							
+						</div>
+						<div class="post__icon">
+							
+						</div>
+						<div class="post__title">Quote post type for post</div>
+						<div class="post__text">
+							You can make many types of posts for your blog porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci quianon numquam.
+						</div>
+						<div class="post__date">June 07, 2018</div>
+						<div class="post__more-btn text-right">Read More</div>
+					</div>
+				</div>				
+			</div>
+		</section>
+		<!-- Fifth Parallax Section -->
+		<section class="featured jumbotron jumbotron-fluid paral paralsec4">
+			<div class="container">
+				<h3 class="big-title">Start your <span>business</span> with  <span>web</span></h3>
+				<div class="separ"></div>
+			</div>
+		</section>
+		<!-- Contact Section -->
+		<section class="contact">
+			<div class="container contact__container">
+				<h4 class="common-title">BE THE FIRST TO GET OUR NEWS</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+
+				<form action="#" class="d-flex flex-row">
+					<div class="form-group col-6 col-sm-8 col-md-10">
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Your email here...">
+					</div>
+					<button type="submit" class="btn btn-primary subscribe-btn col-6 col-sm-4 col-md-2">Subscribe</button>
+				</form>
+
+				<h4 class="common-title">BE THE FIRST TO GET OUR NEWS</h4>
+				<p class="common-text">We are an award winning creative agency with a passion for helping our clients grow.</p>
+				<div class="separ"></div>
+			</div>
+			<div class="container contact__container d-flex flex-row justify-content-between flex-wrap">
+				<form action="#" class="col-12 col-md-6">
+                	<div class="contact__form">
+                		<h5 class="common-title contact__title">Send us <span>a message</span></h5>
+                		<div class="contact__text">Lorem ipsum dolor sit consectetur adipisicing elit eiusmod tempor incididunt.</div>
+            			<input class="contact__name col-12" type="text" placeholder="Name">
+                		<input class="contact__email col-12" type="email" placeholder="E-mail:">
+                    	<textarea class="contact__message col-12" placeholder="Message"></textarea> <br>
+                        <button class="btn contact__btn" type="submit" value="send">SEND</button>
+                        <button class="btn contact__btn" type="reset" value="clear">RESET</button>
+                    </div>
+            	</form>
+            	<div class="contact__info col-12 col-md-4">
+            		<h5 class="common-title contact__title">Get in <span>touch</span></h5>
+					<div class="contact__text">You can also contact us at</div>
+
+					<div class="contact__icon"></div>
+					<div class="contact__text">4952 Woodland Drive, Sioux City, IA 51106</div>
+					<br>
+					<div class="contact__icon"></div>
+					<div class="contact__text">712-274-6481</div>
+					<br>
+					<div class="contact__icon"></div>
+					<div class="contact__text">DonnaJKoch@jourrapide.com</div>
+					<br>
+					<div class="contact__icon"></div>
+					<div class="contact__text">www.website.com</div>
+					<br><br>
+					<h5 class="common-title contact__title">Follow <span>us</span></h5>
+
+					<div class="contact__icon"></div>
+					<div class="contact__icon"></div>
+					<div class="contact__icon"></div>
+					<div class="contact__icon"></div>
+            	</div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__text col-5">
+				Lorem ipsum dolor sit amet, consectetur minim veniam adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna das martou lokra walla loula elli yji soktras aliqua. Ut enim ad , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod
+			</div>
+			<div class="footer__icon"></div>
+			<div class="footer__text">
+				Copyright © 2014 | All Rights Reserved
+			</div>
+		</div>
+	</footer>
+
+
 <!-- Bootstrap 4 Scripts -->
 	<script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
     <script src="bower_components/bootstrap/site/docs/4.1/assets/js/vendor/popper.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>	
