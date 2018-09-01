@@ -72,6 +72,9 @@
     color: #f1ad1d;
     cursor: pointer; }
 
+.logo-carousel {
+  margin-bottom: 90px; }
+
 /* Header */
 .header__container {
   padding-left: 82px;

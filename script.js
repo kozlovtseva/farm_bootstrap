@@ -15,5 +15,27 @@ $(document).ready(function(){
 		$('.company__block').hide();
 	    $('.company__advert').show();
 	});
+// Slick-Carousel
+	$('.logo-carousel').slick({
+		// normal options...
+  			slidesToShow: 5,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+  		// responsive
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 540,
+			settings: {
+				slidesToShow: 2,
+			}
+		}]		
+	});
 
 });
