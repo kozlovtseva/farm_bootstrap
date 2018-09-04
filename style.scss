@@ -9,7 +9,7 @@ $theme-color: #f1ad1d;
 }
 /* Images for Parallax Sections */ 
 .paralsec {
-	background-image: url("img/bg.jpg");
+	background-image: url("img/header_bg.jpg");
 	min-height: 700px;
 	position: relative;
 }
@@ -106,30 +106,28 @@ $theme-color: #f1ad1d;
 		text-transform: uppercase;
 	}
 	&__subtitle {
-		color: #fff;
 		font: 300 18px/18px Lato, sans-serif;
 		margin-bottom: 28px;
-		text-align: left;
 	}
 }
 .slogan {
-	display: flex;
-	flex-direction: row;
-	&__block {
-		border: 1px solid #fff;
-		background-color: rgba(0, 0, 0, 0.3);
-		color: #fff;
-		font: 700 54px/109px Lato, sans-serif;
-		text-align: center;
-		width: 618px;
-		height: 109px;
-	}
-	&__block_cap {
+	border: 1px solid #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	font: 700 54px/109px Lato, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 618px;
+	height: 109px;
+	&_cap {
 		background-color: #fff;
 		color:  $theme-color;
 		width: 138px;
 		height: 109px;
 	}
+	&_small{
+    	display: none;
+    }
 }
 
 /* Navbar */
@@ -430,3 +428,44 @@ $theme-color: #f1ad1d;
 		text-align: center;
 	}
 }
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px){
+	.slogan{
+		display: none;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+	.slogan{
+		font-size: 38px;
+		height: 89px;
+		line-height: 89px;
+		&_big{
+			display: none;
+		}
+		&_small{
+			display: block;
+		}
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+	.slogan{
+		font-size: 38px;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+	.slogan{
+		font-size: 48px;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) and (max-width: 1599.98px)*/
+
+/*@media (min-width: 1601px) */
