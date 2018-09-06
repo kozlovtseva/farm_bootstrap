@@ -145,37 +145,34 @@
   .company__award {
     display: block;
     margin: 57px auto 171px auto; }
-  .company__img {
-    width: 270px;
-    height: 148px; }
-    .company__img:hover {
+  .company__img-block {
+    position: relative;
+    width: 260px;
+    height: 138px; }
+    .company__img-block:hover .company__img {
       cursor: pointer;
       opacity: 0.5; }
-  .company__img_cons {
-    background-image: url("img/company_1.jpg"); }
-  .company__img_photo {
-    background-image: url("img/company_2.jpg"); }
-  .company__img_web {
-    background-image: url("img/company_3.jpg"); }
-  .company__img_advert {
-    background-image: url("img/company_4.jpg"); }
+    .company__img-block:hover .company__img-title {
+      color: #f1ad1d;
+      cursor: pointer;
+      left: 40px; }
+  .company__img {
+    border: 5px solid #fff;
+    width: 260px;
+    height: 138px; }
   .company__img-title {
     background-color: #333;
+    bottom: 13px;
     color: #fff;
     font: 400 14px/42px Lato, sans-serif;
-    margin: 95px 140px 11px 13px;
+    left: 13px;
     padding-left: 14px;
+    position: absolute;
+    transition: left .2s linear;
     width: 117px;
     height: 42px; }
   .company__block {
-    padding-left: 30px; }
-  .company__cons {
-    display: block; }
-  .company__photo {
-    display: none; }
-  .company__web {
-    display: none; }
-  .company__advert {
+    padding-left: 30px;
     display: none; }
   .company__block-title {
     font: 700 18px/18px Montserrat, sans-serif;
@@ -187,6 +184,9 @@
   .company__block-text {
     color: #505050;
     font: 300 14px/22px Lato, sans-serif; }
+
+#block1 {
+  display: block; }
 
 /* Team Section */
 .team {

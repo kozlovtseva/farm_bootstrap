@@ -162,48 +162,39 @@ $theme-color: #f1ad1d;
 		display: block;
 		margin: 57px auto 171px auto;
 	}
-	&__img{
-		width: 270px;
-		height: 148px;
-		&:hover{
+	&__img-block{		
+		position: relative;
+		width: 260px;
+		height: 138px;
+		&:hover .company__img{
 			cursor: pointer;
 			opacity: 0.5;
 		}
+		&:hover .company__img-title{
+			color:  $theme-color;
+			cursor: pointer;
+			left: 40px;		
+		}
 	}
-	&__img_cons{
-		background-image: url("img/company_1.jpg");
-	}
-	&__img_photo{
-		background-image: url("img/company_2.jpg");
-	}
-	&__img_web{
-		background-image: url("img/company_3.jpg");
-	}
-	&__img_advert{
-		background-image: url("img/company_4.jpg");
+	&__img{
+		border: 5px solid #fff;
+		width: 260px;
+		height: 138px;
 	}
 	&__img-title{
 		background-color: #333;
+		bottom: 13px;
 		color:  #fff;
 		font: 400 14px/42px Lato, sans-serif;
-		margin: 95px 140px 11px 13px;
+		left: 13px;
 		padding-left: 14px;
+		position: absolute;
+		transition: left .2s linear;
 		width: 117px;
 		height: 42px;
 	}
 	&__block{
 		padding-left: 30px;
-	}
-	&__cons{
-		display: block;
-	}
-	&__photo{
-		display: none;
-	}
-	&__web{
-		display: none;
-	}
-	&__advert{
 		display: none;
 	}
 	&__block-title{
@@ -219,6 +210,9 @@ $theme-color: #f1ad1d;
 		color:  #505050;
 		font: 300 14px/22px Lato, sans-serif;
 	}
+}
+#block1{
+	display: block;
 }
 /* Team Section */
 .team{
