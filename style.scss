@@ -154,7 +154,7 @@ $theme-color: #f1ad1d;
 /* Company Section */
 .company{
    background-image: url("img/layer.png");
-   padding: 120px 0;
+   padding-top: 120px;
 	&__container{
 		margin-bottom: 184px;
 	}
@@ -164,8 +164,8 @@ $theme-color: #f1ad1d;
 	}
 	&__img-block{		
 		position: relative;
-		width: 260px;
-		height: 138px;
+		width: 270px;
+		height: 158px;
 		&:hover .company__img{
 			cursor: pointer;
 			opacity: 0.5;
@@ -178,8 +178,8 @@ $theme-color: #f1ad1d;
 	}
 	&__img{
 		border: 5px solid #fff;
-		width: 260px;
-		height: 138px;
+		width: 270px;
+		height: 158px;
 	}
 	&__img-title{
 		background-color: #333;

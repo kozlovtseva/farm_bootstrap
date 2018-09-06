@@ -139,7 +139,7 @@
 /* Company Section */
 .company {
   background-image: url("img/layer.png");
-  padding: 120px 0; }
+  padding-top: 120px; }
   .company__container {
     margin-bottom: 184px; }
   .company__award {
@@ -147,8 +147,8 @@
     margin: 57px auto 171px auto; }
   .company__img-block {
     position: relative;
-    width: 260px;
-    height: 138px; }
+    width: 270px;
+    height: 158px; }
     .company__img-block:hover .company__img {
       cursor: pointer;
       opacity: 0.5; }
@@ -158,8 +158,8 @@
       left: 40px; }
   .company__img {
     border: 5px solid #fff;
-    width: 260px;
-    height: 138px; }
+    width: 270px;
+    height: 158px; }
   .company__img-title {
     background-color: #333;
     bottom: 13px;
