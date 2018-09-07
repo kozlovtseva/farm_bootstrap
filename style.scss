@@ -78,9 +78,37 @@ $theme-color: #f1ad1d;
 		cursor: pointer;
 	}
 }
+
 .logo-carousel{
 	margin-bottom: 90px;
 }
+
+.icon{
+	background-color: #333;
+	color: $theme-color;
+	float: left;
+	line-height: 32px;
+	margin: 9px 9px 0 0;
+	text-align: center;
+	width: 32px;
+	height: 32px;
+	&_big{
+		background-color: $theme-color;
+		color: #fff;
+		display: inline-block;
+		line-height: 40px;
+		margin-right: 16px;
+		text-align: center;
+		width: 45px;
+		height: 40px;
+		&:hover{
+			background-color: #333;
+			color: $theme-color;
+			cursor: pointer;
+		}
+	}
+}
+
 .rect-icon{
 	border: 1px solid #fff;
 	color: #fff;
@@ -93,6 +121,7 @@ $theme-color: #f1ad1d;
 		background-color: #fff;
 		color: $theme-color;
 		cursor: pointer;
+		text-decoration: none;
 	}
 }
 /* Header */
@@ -405,14 +434,8 @@ $theme-color: #f1ad1d;
  
 	}
 	&__text{
+		align-self: flex-end;
 		font: 300 14px/18px Lato, sans-serif;
-	}
-	&__icon{
-		background-color: #333;
-		float: left;
-		margin: 9px 9px 0 0;
-		width: 32px;
-		height: 32px;
 	}
 	&__btn{
 		float: left;
