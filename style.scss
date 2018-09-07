@@ -81,7 +81,20 @@ $theme-color: #f1ad1d;
 .logo-carousel{
 	margin-bottom: 90px;
 }
-
+.rect-icon{
+	border: 1px solid #fff;
+	color: #fff;
+	height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+	text-align: center;
+	width: 159px;
+	&:hover{
+		background-color: #fff;
+		color: $theme-color;
+		cursor: pointer;
+	}
+}
 /* Header */
 .header{
 	&__container{
@@ -422,13 +435,14 @@ $theme-color: #f1ad1d;
 /* Footer */
 .footer{
 	background-color: #303030;
+	&__container{
+		padding-bottom: 53px;
+		padding-top: 27px;
+	}
 	&__text{
 		color:  #fff;
 		font: 300 14px/18px Lato, sans-serif;
-		margin: 0 auto;
+		margin: 54px auto;
 		text-align: center;
-	}
-	&__icon{
-
 	}
 }
