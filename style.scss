@@ -273,10 +273,23 @@ $theme-color: #f1ad1d;
 .portfolio{
 	background-image: url("img/layer.png");
 	padding: 120px 0;
+	&__nav-item{
+		border: 1px solid #505050;
+		color: #505050;
+		font: 400 17px/17px Lato, sans-serif;
+		height: 38px;
+		padding: 10px 40px;
+		text-align: center;
+		&:hover{
+			background-color: #505050;
+			color: $theme-color;
+			cursor: pointer;
+		}
+	}
 }
 .testimonials{
 	&__cap .fa{
-	    background-color: white;
+	    background-color: #fff;
 	    color: $theme-color;
 	    float: left;
 	    font-size: 60px;
