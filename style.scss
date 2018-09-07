@@ -9,7 +9,7 @@ $theme-color: #f1ad1d;
 }
 /* Images for Parallax Sections */ 
 .paralsec {
-	background-image: url("img/bg.jpg");
+	background-image: url("img/header_bg.jpg");
 	min-height: 700px;
 	position: relative;
 }
@@ -109,30 +109,28 @@ $theme-color: #f1ad1d;
 		text-transform: uppercase;
 	}
 	&__subtitle {
-		color: #fff;
 		font: 300 18px/18px Lato, sans-serif;
 		margin-bottom: 28px;
-		text-align: left;
 	}
 }
 .slogan {
-	display: flex;
-	flex-direction: row;
-	&__block {
-		border: 1px solid #fff;
-		background-color: rgba(0, 0, 0, 0.3);
-		color: #fff;
-		font: 700 54px/109px Lato, sans-serif;
-		text-align: center;
-		width: 618px;
-		height: 109px;
-	}
-	&__block_cap {
+	border: 1px solid #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	font: 700 54px/109px Lato, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 618px;
+	height: 109px;
+	&_cap {
 		background-color: #fff;
 		color:  $theme-color;
 		width: 138px;
 		height: 109px;
 	}
+	&_small{
+    	display: none;
+    }
 }
 
 /* Navbar */
@@ -159,7 +157,7 @@ $theme-color: #f1ad1d;
 /* Company Section */
 .company{
    background-image: url("img/layer.png");
-   padding: 120px 0;
+   padding-top: 120px;
 	&__container{
 		margin-bottom: 184px;
 	}
@@ -167,48 +165,39 @@ $theme-color: #f1ad1d;
 		display: block;
 		margin: 57px auto 171px auto;
 	}
-	&__img{
+	&__img-block{		
+		position: relative;
 		width: 270px;
-		height: 148px;
-		&:hover{
+		height: 158px;
+		&:hover .company__img{
 			cursor: pointer;
 			opacity: 0.5;
 		}
+		&:hover .company__img-title{
+			color:  $theme-color;
+			cursor: pointer;
+			left: 40px;		
+		}
 	}
-	&__img_cons{
-		background-image: url("img/company_1.jpg");
-	}
-	&__img_photo{
-		background-image: url("img/company_2.jpg");
-	}
-	&__img_web{
-		background-image: url("img/company_3.jpg");
-	}
-	&__img_advert{
-		background-image: url("img/company_4.jpg");
+	&__img{
+		border: 5px solid #fff;
+		width: 270px;
+		height: 158px;
 	}
 	&__img-title{
 		background-color: #333;
+		bottom: 13px;
 		color:  #fff;
 		font: 400 14px/42px Lato, sans-serif;
-		margin: 95px 140px 11px 13px;
+		left: 13px;
 		padding-left: 14px;
+		position: absolute;
+		transition: left .2s linear;
 		width: 117px;
 		height: 42px;
 	}
 	&__block{
 		padding-left: 30px;
-	}
-	&__cons{
-		display: block;
-	}
-	&__photo{
-		display: none;
-	}
-	&__web{
-		display: none;
-	}
-	&__advert{
 		display: none;
 	}
 	&__block-title{
@@ -224,6 +213,9 @@ $theme-color: #f1ad1d;
 		color:  #505050;
 		font: 300 14px/22px Lato, sans-serif;
 	}
+}
+#block1{
+	display: block;
 }
 /* Team Section */
 .team{
@@ -446,3 +438,44 @@ $theme-color: #f1ad1d;
 		text-align: center;
 	}
 }
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px){
+	.slogan{
+		display: none;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+	.slogan{
+		font-size: 38px;
+		height: 89px;
+		line-height: 89px;
+		&_big{
+			display: none;
+		}
+		&_small{
+			display: block;
+		}
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+	.slogan{
+		font-size: 38px;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+	.slogan{
+		font-size: 48px;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) and (max-width: 1599.98px)*/
+
+/*@media (min-width: 1601px) */

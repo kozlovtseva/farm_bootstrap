@@ -1,20 +1,9 @@
 $(document).ready(function(){
-	$('.company__img_cons').hover(function(){
+	$('.company__img-block').hover(function(){
 		$('.company__block').hide();
-	    $('.company__cons').show();
+	    $("#"+$(this).attr('data-id')).show();
 	});
-	$('.company__img_photo').hover(function(){
-		$('.company__block').hide();
-	    $('.company__photo').show();
-	});
-	$('.company__img_web').hover(function(){
-		$('.company__block').hide();
-	    $('.company__web').show();
-	});
-	$('.company__img_advert').hover(function(){
-		$('.company__block').hide();
-	    $('.company__advert').show();
-	});
+
 // Slick-Carousel
 	$('.logo-carousel').slick({
 		// normal options...
