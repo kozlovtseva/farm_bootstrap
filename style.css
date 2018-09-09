@@ -72,10 +72,9 @@
     color: #f1ad1d;
     cursor: pointer; }
 
-<<<<<<< HEAD
 .logo-carousel {
   margin-bottom: 90px; }
-=======
+
 .icon {
   background-color: #333;
   color: #f1ad1d;
@@ -98,7 +97,6 @@
       background-color: #333;
       color: #f1ad1d;
       cursor: pointer; }
->>>>>>> icons
 
 .rect-icon {
   border: 1px solid #fff;
@@ -265,20 +263,64 @@
     padding: 0; }
 
 /* Portfolio-Section */
-.portfolio {
+.tile {
   background-image: url("img/layer.png");
-  padding: 120px 0; }
-  .portfolio__nav-item {
+  color: #f1ad1d;
+  padding: 120px 0;
+  position: re .tile __nav;
+    position-margin: 0 auto; }
+  .tile__filter {
     border: 1px solid #505050;
     color: #505050;
     font: 400 17px/17px Lato, sans-serif;
     height: 38px;
     padding: 10px 40px;
-    text-align: center; }
-    .portfolio__nav-item:hover {
+    text-align: center;
+    transition: all 0.2s linear; }
+    .tile__filter:hover {
       background-color: #505050;
       color: #f1ad1d;
       cursor: pointer; }
+  .tile__images {
+    margin: 20px auto; }
+  .tile__item {
+    margin-bottom: 5px;
+    position: relative; }
+    .tile__item:hover {
+      cursor: pointer; }
+    .tile__item:hover .tile__img {
+      opacity: 0; }
+    .tile__item:hover .tile__overlay {
+      opacity: 1; }
+  .tile__img {
+    opacity: 1;
+    width: 271px;
+    height: 271px; }
+  .tile__overlay {
+    background-color: #fff;
+    border: 2px solid #333;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.7s ease-out;
+    width: 271px;
+    height: 271px; }
+  .tile__title {
+    color: #5b5b5b;
+    font: 300 18px/20px Lato, sans-serif;
+    margin: 20px 0;
+    text-align: center; }
+  .tile__text {
+    font-size: 14px; }
+  .tile__separ {
+    margin: 10px auto; }
+  .tile__btn {
+    display: block;
+    margin: 0 auto; }
+
+.active {
+  background-color: #505050;
+  color: #f1ad1d; }
 
 .testimonials__cap .fa {
   background-color: #fff;

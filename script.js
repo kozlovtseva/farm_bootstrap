@@ -27,4 +27,20 @@ $(document).ready(function(){
 		}]		
 	});
 
+//Tile Block
+	$('.tile__filter').click(function(){
+		if($(this).hasClass('active')){
+			return;
+		}
+		$('.tile__filter.active').button('toggle');
+		$(this).button('toggle');
+		if($(this).text() === 'All'){
+			$('.tile__item').fadeIn(800);
+		}else{		
+			$('.tile__item')
+				.hide()
+				.filter('[data-key="'+$(this).text().toLowerCase()+'"]')
+				.fadeIn(800);						
+		};
+	})
 });
