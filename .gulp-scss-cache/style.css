@@ -166,7 +166,7 @@
 /* Company Section */
 .company {
   background-image: url("img/layer.png");
-  padding-top: 120px; }
+  padding: 120px 0; }
   .company__container {
     margin-bottom: 184px; }
   .company__award {
@@ -188,7 +188,7 @@
     width: 270px;
     height: 158px; }
   .company__img-title {
-    background-color: #333;
+    background-color: #6f824f;
     bottom: 13px;
     color: #fff;
     font: 400 14px/42px Lato, sans-serif;
