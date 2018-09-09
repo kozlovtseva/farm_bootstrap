@@ -266,9 +266,9 @@
 .tile {
   background-image: url("img/layer.png");
   color: #f1ad1d;
-  padding: 120px 0;
-  position: re .tile __nav;
-    position-margin: 0 auto; }
+  padding: 120px 0; }
+  .tile__nav {
+    margin: 0 auto; }
   .tile__filter {
     border: 1px solid #505050;
     color: #505050;
