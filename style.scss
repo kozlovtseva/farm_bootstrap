@@ -14,16 +14,17 @@ $theme-color: #f1ad1d;
 	position: relative;
 }
 .paralsec1 {
-	background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+	background-image: url("img/bg_1.jpg");
+	height: 335px;
 } 
 .paralsec2 {
-	background-image: url("img/bg9.jpg");
+	background-image: url("img/bg_2.jpg");
 }
 .paralsec3 {
-	background-image: url("img/bg5.jpg");
+	background-image: url("img/bg_3.jpg");
 }
 .paralsec4 {
-	background-image: url("img/bg10.jpg");
+	background-image: url("img/company_web.jpg");
 }
 	/* Remove Bottom Margin from Jumbotron */
 .jumbotron {
@@ -187,12 +188,9 @@ $theme-color: #f1ad1d;
 .company{
    background-image: url("img/layer.png");
    padding: 120px 0;
-	&__container{
-		margin-bottom: 184px;
-	}
 	&__award{
 		display: block;
-		margin: 57px auto 171px auto;
+		margin: 95px auto;
 	}
 	&__img-block{		
 		position: relative;
@@ -251,24 +249,28 @@ $theme-color: #f1ad1d;
 	background-image: url("img/layer.png");
 	padding: 120px 0;
 	&__block{
-		margin: 0 auto 190px auto;
+		margin: 0 auto 132px auto;
 	}
 	&__img-item{
-		border: 5px solid #fff;
 		position: relative;
 		width: 175px;
-		height: 180px;
+		height: 175px;
+	}
+	&__img-item img{
+		border: 5px solid #fff;
+		width: 175px;
+		height: 175px;
 	}
 	&__img-title{
-		background-color: #333;
-		bottom: 5%;
+		background-color: #6f824f;
+		bottom: 6%;
 		color: #fff;
-		font: 400 14px/42px Lato, sans-serif;
-		left: 5%;
+		font: 400 14px/34px Lato, sans-serif;
+		left: 6%;
 		position: absolute;
 		text-align: center;
-		width: 136px;
-		height: 42px;
+		width: 113px;
+		height: 34px;
 	}
 	&__img-title span{
 		color: $theme-color;
@@ -277,7 +279,7 @@ $theme-color: #f1ad1d;
 /* Offer-Block */
 .offer{
 	border-bottom: 3px solid #333;
-	width: 271px;
+	margin: 10px;
 	&__title{
 		background-color:  #333;
 		color: #fff;
@@ -286,6 +288,13 @@ $theme-color: #f1ad1d;
 	}
 	&__title span{
 		color: $theme-color;
+	}
+	&__icon{
+		color: #505050;
+		display: block;   
+		font-size: 34px;
+		padding: 20px 0;
+		text-align: center;
 	}
 	&__text{
 		color:  #505050;
@@ -302,11 +311,19 @@ $theme-color: #f1ad1d;
 		padding: 0;
 	}
 }
+/* Featured__logo-block */
+.featured__logo-block{
+	width: 80%;
+}
+
+
 /* Portfolio-Section */
-.tile{
+.portfolio{
 	background-image: url("img/layer.png");
-	color: $theme-color;
 	padding: 120px 0;
+}
+.tile{
+	margin-bottom: 75px;
 	&__nav{
 		margin: 0 auto;
 	}
@@ -349,6 +366,7 @@ $theme-color: #f1ad1d;
 		background-color: #fff;
 		border: 2px solid #333;
 		opacity: 0;
+		padding: 20px 15px;
 		position: absolute;
 		top: 0;
 		transition: all 0.7s ease-out;
@@ -397,6 +415,8 @@ $theme-color: #f1ad1d;
 	}
 	&__photo{
 		margin: 15px 15px 0 0;
+		width: 50px;
+		height: 50px;
 	}
 	&__info{
 		padding-top: 30px;
@@ -407,7 +427,7 @@ $theme-color: #f1ad1d;
 	}
 	&__function{
 		color:  #5b5b5b;
-		font: 300 14px/14px Lato, sans-serif;
+		font: 300 14px/31px Lato, sans-serif;
 	}
 }
 /* Blog Section */

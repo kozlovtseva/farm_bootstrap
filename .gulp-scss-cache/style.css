@@ -11,16 +11,17 @@
   position: relative; }
 
 .paralsec1 {
-  background-image: url("https://img.webnots.com/2017/05/parallax1.jpg"); }
+  background-image: url("img/bg_1.jpg");
+  height: 335px; }
 
 .paralsec2 {
-  background-image: url("img/bg9.jpg"); }
+  background-image: url("img/bg_2.jpg"); }
 
 .paralsec3 {
-  background-image: url("img/bg5.jpg"); }
+  background-image: url("img/bg_3.jpg"); }
 
 .paralsec4 {
-  background-image: url("img/bg10.jpg"); }
+  background-image: url("img/company_web.jpg"); }
 
 /* Remove Bottom Margin from Jumbotron */
 .jumbotron {
@@ -167,11 +168,9 @@
 .company {
   background-image: url("img/layer.png");
   padding: 120px 0; }
-  .company__container {
-    margin-bottom: 184px; }
   .company__award {
     display: block;
-    margin: 57px auto 171px auto; }
+    margin: 95px auto; }
   .company__img-block {
     position: relative;
     width: 270px;
@@ -220,29 +219,32 @@
   background-image: url("img/layer.png");
   padding: 120px 0; }
   .team__block {
-    margin: 0 auto 190px auto; }
+    margin: 0 auto 132px auto; }
   .team__img-item {
-    border: 5px solid #fff;
     position: relative;
     width: 175px;
-    height: 180px; }
+    height: 175px; }
+  .team__img-item img {
+    border: 5px solid #fff;
+    width: 175px;
+    height: 175px; }
   .team__img-title {
-    background-color: #333;
-    bottom: 5%;
+    background-color: #6f824f;
+    bottom: 6%;
     color: #fff;
-    font: 400 14px/42px Lato, sans-serif;
-    left: 5%;
+    font: 400 14px/34px Lato, sans-serif;
+    left: 6%;
     position: absolute;
     text-align: center;
-    width: 136px;
-    height: 42px; }
+    width: 113px;
+    height: 34px; }
   .team__img-title span {
     color: #f1ad1d; }
 
 /* Offer-Block */
 .offer {
   border-bottom: 3px solid #333;
-  width: 271px; }
+  margin: 10px; }
   .offer__title {
     background-color: #333;
     color: #fff;
@@ -250,6 +252,12 @@
     text-align: center; }
   .offer__title span {
     color: #f1ad1d; }
+  .offer__icon {
+    color: #505050;
+    display: block;
+    font-size: 34px;
+    padding: 20px 0;
+    text-align: center; }
   .offer__text {
     color: #505050;
     font: 300 14px/14px Lato, sans-serif;
@@ -262,11 +270,17 @@
     list-style: none;
     padding: 0; }
 
+/* Featured__logo-block */
+.featured__logo-block {
+  width: 80%; }
+
 /* Portfolio-Section */
-.tile {
+.portfolio {
   background-image: url("img/layer.png");
-  color: #f1ad1d;
   padding: 120px 0; }
+
+.tile {
+  margin-bottom: 75px; }
   .tile__nav {
     margin: 0 auto; }
   .tile__filter {
@@ -300,6 +314,7 @@
     background-color: #fff;
     border: 2px solid #333;
     opacity: 0;
+    padding: 20px 15px;
     position: absolute;
     top: 0;
     transition: all 0.7s ease-out;
@@ -338,7 +353,9 @@
   font: 300 14px/20px Lato, sans-serif;
   padding: 19px 0 29px 0; }
 .testimonials__photo {
-  margin: 15px 15px 0 0; }
+  margin: 15px 15px 0 0;
+  width: 50px;
+  height: 50px; }
 .testimonials__info {
   padding-top: 30px; }
 .testimonials__name {
@@ -346,7 +363,7 @@
   font: 400 14px/14px Lato, sans-serif; }
 .testimonials__function {
   color: #5b5b5b;
-  font: 300 14px/14px Lato, sans-serif; }
+  font: 300 14px/31px Lato, sans-serif; }
 
 /* Blog Section */
 .blog {

@@ -39,7 +39,7 @@ $(document).ready(function(){
 		}else{		
 			$('.tile__item')
 				.hide()
-				.filter('[data-key="'+$(this).text().toLowerCase()+'"]')
+				.filter('[data-key~="'+$(this).text().toLowerCase()+'"]')
 				.fadeIn(800);						
 		};
 	})
