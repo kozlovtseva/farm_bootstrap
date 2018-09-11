@@ -128,8 +128,10 @@ $theme-color: #f1ad1d;
 /* Header */
 .header{
 	&__container{
-		padding-left: 82px;
+		//padding-left: 82px;
 		position: absolute;
+		left: 0;
+    	right: 0;
 		top: 50%;
 	}
 	&__title {
@@ -439,20 +441,39 @@ $theme-color: #f1ad1d;
 	border-bottom: 3px solid #333;
 	padding-bottom: 11px;
 	margin-bottom: 32px;
+	width: 357px;
 	&__content{
-		width: 370px;
+		width: 357px;
 		height: 181px;
+		&_quote{
+			background-color: #DDDDDD;
+			color: #636363;
+			font: 300 44px/44px Tangerine, serif;
+			padding: 20px;
+		}
+		&_author{
+			color: #636363;
+			float: left;
+			font: 300 14px/18px Lato, sans-serif;		
+    		margin-top: 20px;
+		}
+	}
+	&__img{
+		width: 347px;
+		height: 172px;
 	}
 	&__icon{
-		background-color: #333;
+		color: #9E9E9E;
 		float: left;
-		margin: 9px 9px 0 0;
-		width: 32px;
-		height: 32px;
+		font-size: 52px;
+    	line-height: 0px;
+    	text-align: right;
+		width: 97%;
 	}
 	&__title{
 		color:  #333;
 		font: 700 18px/51px Montserrat, sans-serif;
+		transition: all 0.2s linear;
 		&:hover{
 			color: $theme-color;
 			cursor: pointer;
@@ -471,6 +492,7 @@ $theme-color: #f1ad1d;
 		color:  #828282;
 		font: 300 12px/18px Lato, sans-serif;
 		text-transform: uppercase;
+		transition: all 0.2s linear;
 	}
 	&__date{
 		float: left;
