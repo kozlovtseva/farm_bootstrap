@@ -257,14 +257,19 @@ $theme-color: #f1ad1d;
 		margin: 0 auto 132px auto;
 	}
 	&__img-item{
+		display: block;
 		position: relative;
 		width: 175px;
 		height: 175px;
-	}
-	&__img-item img{
-		border: 5px solid #fff;
-		width: 175px;
-		height: 175px;
+		&:hover .team__img{
+			cursor: pointer;
+			filter: grayscale(100%);
+		}
+		&:hover .team__img-title{
+			background-color: gray;
+			color: #333;
+			cursor: pointer;
+		}
 	}
 	&__img-title{
 		background-color: #6f824f;
@@ -279,6 +284,42 @@ $theme-color: #f1ad1d;
 	}
 	&__img-title span{
 		color: $theme-color;
+	}
+	&__img{
+		border: 5px solid #fff;
+		width: 175px;
+		height: 175px;
+		&_overlay{
+			display: block;
+			margin: 0 auto 15px auto;
+		}
+	}	
+	&__overlay{
+		display: none;
+		margin: 0 auto;
+		position: relative;
+	}
+	&__close-btn{
+		position: absolute;
+		right: 0;
+		top: 0;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	&__title{
+		color: #333;
+		font: 400 18px/24px Lato, sans-serif;
+		margin: 0 auto 20px auto;
+		text-align: center;
+	}
+	&__text{
+		font-size: 12px;
+	}
+	&__icon{
+		background-color: #fff;
+		border: 1px solid #333;
+		color: #333;
 	}
 }
 /* Offer-Block */
@@ -526,6 +567,7 @@ $theme-color: #f1ad1d;
 		color:  #505050;
 		font: italic 300 14px/12px Lato, sans-serif;
 		margin-bottom: 10px;
+		outline: none;
 		padding: 19px 13px;
 		height: 45px;
 	}
@@ -547,6 +589,7 @@ $theme-color: #f1ad1d;
 .form-control{
 	height: 51px;
 	margin-bottom: 105px;
+	outline: none;
 }
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
@@ -572,6 +615,8 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 		text-align: center;
 	}
 }
+
+
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px){
@@ -613,3 +658,5 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 /*@media (min-width: 1200px) and (max-width: 1599.98px)*/
 
 /*@media (min-width: 1601px) */
+
+

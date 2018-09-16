@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+//Company Block
+//меняем содержимое блока по наведению на одну из соседних картинок
 	$('.company__img-block').hover(function(){
 		$('.company__block').hide();
 	    $("#"+$(this).attr('data-id')).show();
@@ -35,12 +38,28 @@ $(document).ready(function(){
 		$('.tile__filter.active').button('toggle');
 		$(this).button('toggle');
 		if($(this).text() === 'All'){
-			$('.tile__item').fadeIn(800);
+			$('.tile__item').fadeIn(800);//показываем все картинки
 		}else{		
 			$('.tile__item')
-				.hide()
-				.filter('[data-key~="'+$(this).text().toLowerCase()+'"]')
-				.fadeIn(800);						
+				.hide() //прячем все
+				.filter('[data-key~="'+$(this).text().toLowerCase()+'"]')//фильтруем по ключу
+				.fadeIn(800);//показываем картинки, которые отвечают фильтру						
 		};
-	})
+	});
+
+//Team Block
+//по клику на фото - информация о сотруднике
+	$('.team__img-item').click(function(){
+		$('.team__img-item').css("display", "none");
+		$('.team__overlay')
+			.css("display", "none")
+			.filter('[data-id~="'+$(this).attr("id")+'"]')
+			.show(800);
+	});
+//по клику на крестик - к плитке фотографий
+	$('.team__close-btn').click(function(){
+		$('.team__overlay').hide();
+		$('.team__img-item').fadeIn(800);
+	});
+
 });

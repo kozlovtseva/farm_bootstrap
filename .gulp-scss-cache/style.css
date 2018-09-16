@@ -225,13 +225,17 @@
   .team__block {
     margin: 0 auto 132px auto; }
   .team__img-item {
+    display: block;
     position: relative;
     width: 175px;
     height: 175px; }
-  .team__img-item img {
-    border: 5px solid #fff;
-    width: 175px;
-    height: 175px; }
+    .team__img-item:hover .team__img {
+      cursor: pointer;
+      filter: grayscale(100%); }
+    .team__img-item:hover .team__img-title {
+      background-color: gray;
+      color: #333;
+      cursor: pointer; }
   .team__img-title {
     background-color: #6f824f;
     bottom: 6%;
@@ -244,6 +248,34 @@
     height: 34px; }
   .team__img-title span {
     color: #f1ad1d; }
+  .team__img {
+    border: 5px solid #fff;
+    width: 175px;
+    height: 175px; }
+    .team__img_overlay {
+      display: block;
+      margin: 0 auto 15px auto; }
+  .team__overlay {
+    display: none;
+    margin: 0 auto;
+    position: relative; }
+  .team__close-btn {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .team__close-btn:hover {
+      cursor: pointer; }
+  .team__title {
+    color: #333;
+    font: 400 18px/24px Lato, sans-serif;
+    margin: 0 auto 20px auto;
+    text-align: center; }
+  .team__text {
+    font-size: 12px; }
+  .team__icon {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333; }
 
 /* Offer-Block */
 .offer {
@@ -442,6 +474,7 @@
     color: #505050;
     font: italic 300 14px/12px Lato, sans-serif;
     margin-bottom: 10px;
+    outline: none;
     padding: 19px 13px;
     height: 45px; }
   .contact__message {
@@ -457,7 +490,8 @@
 
 .form-control {
   height: 51px;
-  margin-bottom: 105px; }
+  margin-bottom: 105px;
+  outline: none; }
 
 input:focus::-webkit-input-placeholder {
   color: transparent; }
