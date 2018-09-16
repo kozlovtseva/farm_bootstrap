@@ -71,6 +71,7 @@ $theme-color: #f1ad1d;
 	border-color: $theme-color;
 	color:  #fff;
 	font: 400 18px/18px Lato, sans-serif;
+	transition: all 0.2s linear;
 	width: 176px;
 	height: 51px;
 	&:hover{
@@ -100,6 +101,7 @@ $theme-color: #f1ad1d;
 		line-height: 40px;
 		margin-right: 16px;
 		text-align: center;
+		transition: all 0.2s linear;
 		width: 45px;
 		height: 40px;
 		&:hover{
@@ -117,6 +119,7 @@ $theme-color: #f1ad1d;
     line-height: 40px;
     margin-bottom: 15px;
 	text-align: center;
+	transition: all 0.2s linear;
 	width: 159px;
 	&:hover{
 		background-color: #fff;
@@ -532,7 +535,7 @@ $theme-color: #f1ad1d;
 	}
 	&__text{
 		align-self: flex-end;
-		font: 300 14px/18px Lato, sans-serif;
+		font: 300 14px/45px Lato, sans-serif;
 	}
 	&__btn{
 		float: left;
@@ -543,7 +546,18 @@ $theme-color: #f1ad1d;
 }
 .form-control{
 	height: 51px;
+	margin-bottom: 105px;
 }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 /* Footer */
 .footer{
 	background-color: #303030;
