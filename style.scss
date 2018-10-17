@@ -197,10 +197,15 @@ $theme-color: #f1ad1d;
 		display: block;
 		margin: 95px auto;
 	}
+	&__images{
+		display: flex;
+		justify-content: space-between;
+    	flex-wrap: wrap;
+	}
 	&__img-block{		
 		position: relative;
-		width: 270px;
-		height: 158px;
+		width: 255px;
+		height: 184px;
 		&:hover .company__img{
 			cursor: pointer;
 			opacity: 0.5;
@@ -213,8 +218,8 @@ $theme-color: #f1ad1d;
 	}
 	&__img{
 		border: 5px solid #fff;
-		width: 270px;
-		height: 158px;
+		width: 255px;
+		height: 184px;
 	}
 	&__img-title{
 		background-color: #6f824f;
@@ -229,6 +234,7 @@ $theme-color: #f1ad1d;
 		height: 42px;
 	}
 	&__block{
+		margin-bottom: 50px;
 		padding-left: 30px;
 		display: none;
 	}
@@ -371,6 +377,10 @@ $theme-color: #f1ad1d;
 .tile{
 	margin-bottom: 75px;
 	&__nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 		margin: 0 auto;
 	}
 	&__filter{
@@ -388,6 +398,10 @@ $theme-color: #f1ad1d;
 		}
 	}
 	&__images{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		margin: 20px auto;
 	}
 	&__item{
@@ -419,6 +433,15 @@ $theme-color: #f1ad1d;
 		width: 271px;
 		height: 271px;
 	}
+	&__overlay_block{
+		background-color: #fff;
+		border: 2px solid #333;
+		display: none;
+		margin: 0 auto;
+		padding: 20px 15px;
+		width: 271px;
+		height: 271px;
+	}
 	&__title{
 		color:  #5b5b5b;
 		font: 300 18px/20px Lato, sans-serif;
@@ -441,6 +464,13 @@ $theme-color: #f1ad1d;
 	color: $theme-color;
 }
 .testimonials{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item{
+		margin-bottom: 50px;
+	}
 	&__cap .fa{
 	    background-color: #fff;
 	    color: $theme-color;
@@ -473,7 +503,7 @@ $theme-color: #f1ad1d;
 	}
 	&__function{
 		color:  #5b5b5b;
-		font: 300 14px/31px Lato, sans-serif;
+		font: 300 14px/14px Lato, sans-serif;
 	}
 }
 /* Blog Section */
@@ -623,6 +653,26 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	.slogan{
 		display: none;
 	}
+	.company__images,
+	.tile__nav,
+	.tile__images{
+		display: none;		
+	}
+	.company__block,
+	.tile__overlay_block{
+		display: block;
+	}
+	.post{
+		width: 307px;
+		&__content{
+			width: 307px;
+			//height: 181px;
+		}
+		&__img{
+			width: 307px;
+			//height: 172px;
+		}
+	}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -637,6 +687,15 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 		&_small{
 			display: block;
 		}
+	}
+	.company__images,
+	.tile__nav,
+	.tile__images{
+		display: none;		
+	}
+	.company__block,
+	.tile__overlay_block{
+		display: block;
 	}
 }
 

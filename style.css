@@ -175,10 +175,14 @@
   .company__award {
     display: block;
     margin: 95px auto; }
+  .company__images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .company__img-block {
     position: relative;
-    width: 270px;
-    height: 158px; }
+    width: 255px;
+    height: 184px; }
     .company__img-block:hover .company__img {
       cursor: pointer;
       opacity: 0.5; }
@@ -188,8 +192,8 @@
       left: 40px; }
   .company__img {
     border: 5px solid #fff;
-    width: 270px;
-    height: 158px; }
+    width: 255px;
+    height: 184px; }
   .company__img-title {
     background-color: #6f824f;
     bottom: 13px;
@@ -202,6 +206,7 @@
     width: 117px;
     height: 42px; }
   .company__block {
+    margin-bottom: 50px;
     padding-left: 30px;
     display: none; }
   .company__block-title {
@@ -318,6 +323,10 @@
 .tile {
   margin-bottom: 75px; }
   .tile__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto; }
   .tile__filter {
     border: 1px solid #505050;
@@ -332,6 +341,10 @@
       color: #f1ad1d;
       cursor: pointer; }
   .tile__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 20px auto; }
   .tile__item {
     margin-bottom: 5px;
@@ -356,6 +369,14 @@
     transition: all 0.7s ease-out;
     width: 271px;
     height: 271px; }
+  .tile__overlay_block {
+    background-color: #fff;
+    border: 2px solid #333;
+    display: none;
+    margin: 0 auto;
+    padding: 20px 15px;
+    width: 271px;
+    height: 271px; }
   .tile__title {
     color: #5b5b5b;
     font: 300 18px/20px Lato, sans-serif;
@@ -373,33 +394,40 @@
   background-color: #505050;
   color: #f1ad1d; }
 
-.testimonials__cap .fa {
-  background-color: #fff;
-  color: #f1ad1d;
-  float: left;
-  font-size: 60px;
-  padding-right: 10px; }
-.testimonials__line {
-  border-bottom: 3px solid #f1ad1d;
-  padding: 15px 0; }
-.testimonials__text {
-  border-bottom: 3px solid #111;
-  color: #5b5b5b;
-  clear: both;
-  font: 300 14px/20px Lato, sans-serif;
-  padding: 19px 0 29px 0; }
-.testimonials__photo {
-  margin: 15px 15px 0 0;
-  width: 50px;
-  height: 50px; }
-.testimonials__info {
-  padding-top: 30px; }
-.testimonials__name {
-  color: #313131;
-  font: 400 14px/14px Lato, sans-serif; }
-.testimonials__function {
-  color: #5b5b5b;
-  font: 300 14px/31px Lato, sans-serif; }
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .testimonials__item {
+    margin-bottom: 50px; }
+  .testimonials__cap .fa {
+    background-color: #fff;
+    color: #f1ad1d;
+    float: left;
+    font-size: 60px;
+    padding-right: 10px; }
+  .testimonials__line {
+    border-bottom: 3px solid #f1ad1d;
+    padding: 15px 0; }
+  .testimonials__text {
+    border-bottom: 3px solid #111;
+    color: #5b5b5b;
+    clear: both;
+    font: 300 14px/20px Lato, sans-serif;
+    padding: 19px 0 29px 0; }
+  .testimonials__photo {
+    margin: 15px 15px 0 0;
+    width: 50px;
+    height: 50px; }
+  .testimonials__info {
+    padding-top: 30px; }
+  .testimonials__name {
+    color: #313131;
+    font: 400 14px/14px Lato, sans-serif; }
+  .testimonials__function {
+    color: #5b5b5b;
+    font: 300 14px/14px Lato, sans-serif; }
 
 /* Blog Section */
 .blog {
@@ -538,7 +566,23 @@ textarea:focus:-ms-input-placeholder {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   .slogan {
-    display: none; } }
+    display: none; }
+
+  .company__images,
+  .tile__nav,
+  .tile__images {
+    display: none; }
+
+  .company__block,
+  .tile__overlay_block {
+    display: block; }
+
+  .post {
+    width: 307px; }
+    .post__content {
+      width: 307px; }
+    .post__img {
+      width: 307px; } }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   .slogan {
@@ -548,7 +592,16 @@ textarea:focus:-ms-input-placeholder {
     .slogan_big {
       display: none; }
     .slogan_small {
-      display: block; } }
+      display: block; }
+
+  .company__images,
+  .tile__nav,
+  .tile__images {
+    display: none; }
+
+  .company__block,
+  .tile__overlay_block {
+    display: block; } }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .slogan {
